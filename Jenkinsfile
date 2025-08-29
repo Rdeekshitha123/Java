@@ -23,7 +23,7 @@ pipeline {
 
         stage('Unit Tests') {
             steps {
-                echo "Running unit tests..."
+                echo "Running unit tests"
                 sh 'mvn test'
             }
             post {
@@ -35,7 +35,7 @@ pipeline {
 
         stage('Package Artifact') {
             steps {
-                echo "Packaging JAR..."
+                echo "Packaging JAR"
                 sh 'mvn package'
             }
             post {
