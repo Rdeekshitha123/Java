@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo "Cloning repo..."
+                echo "Cloning repo"
                 git branch: 'main', url: 'https://github.com/Rdeekshitha123/Java.git'
             }
         }
